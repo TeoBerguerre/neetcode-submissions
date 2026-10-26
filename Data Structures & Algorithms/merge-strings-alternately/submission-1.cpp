@@ -1,0 +1,12 @@
+class Solution {
+    public:
+    string mergeAlternately(string word1, string word2) {
+    string res;
+    size_t i = 0;
+    for (; i < word1.size() || i < word2.size(); i++) {
+    if (i < word1.size()) res += word1[i];
+    if (i < word2.size()) res += word2[i];
+    }
+    return res;
+    }
+    };
